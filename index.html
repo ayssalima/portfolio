@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Ayssa Lima — Designer criativa e estudante de TI na EEEP Luíza de Teodoro Vieira. Experiências em UI Design, Figma, Canva e CapCut.">
+    <meta name="author" content="Ayssa Lima">
+    <meta name="theme-color" content="#111184">
+
+    <title>Ayssa Lima | Portfólio — Design & TI</title>
+
+    <!-- Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HEADER / NAVIGATION                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Ayssa Lima — Página inicial">
+                Ayssa Lima
+            </a>
+
+            <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#projetos" class="nav-link active">Projetos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#certificados" class="nav-link">Certificados</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#projetos" class="btn btn-primary btn-sm" id="btn-projects-header">
+                    Ver Projetos
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <span class="logo">Ayssa Lima</span>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fechar menu">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+            <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+            <li><a href="#certificados" class="mobile-nav-link">Certificados</a></li>
+            <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+            <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+        </div>
+        <div class="mobile-nav-socials">
+            <a href="https://github.com/ayssalima" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://wa.me/558574008753" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- HERO SECTION                                -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="hero" id="inicio">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-headline anim-hero-line" style="--delay: 0">
+                            Olá, eu sou<br>
+                            <span class="hero-name-highlight">Ayssa Lima</span> —<br>
+                            Designer &<br>
+                            Estudante de<br>
+                            TI
+                        </h1>
+                        <p class="hero-tagline anim-hero-line" style="--delay: 1">Combinando estética editorial com pensamento lógico para criar experiências digitais que respiram e conectam.</p>
+                        <div class="hero-cta anim-hero-line" style="--delay: 2">
+                            <a href="#contato" class="btn btn-hero-contact" id="btn-hero-contact">
+                                Entre em Contato
+                            </a>
+                            <a href="#projetos" class="btn-hero-explore" id="btn-hero-explore">
+                                Explorar meu trabalho
+                                <span class="explore-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Vertical accent bar -->
+            <div class="hero-accent-bar" aria-hidden="true"></div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- PROJETOS SECTION                            -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="projetos" id="projetos">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Curadoria</span>
+                    <h2 class="section-title">Projetos <span class="accent">Selecionados</span></h2>
+                    <p class="section-subtitle">Uma curadoria de desafios resolvidos através do design centrado no humano e tecnologia.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card fade-up" id="project-1">
+                        <div class="project-image-wrapper">
+                            <img 
+                                src="assets/mockup-01.jpg" 
+                                alt="Mockup do projeto Plataforma EduConnect — redesign da jornada de aprendizado" 
+                                class="project-image"
+                                loading="lazy"
+                                width="600"
+                                height="400"
+                            >
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Nossa equipe</h3>
+                            <p class="project-desc">Projeto de identidade visual para equipe de TI, com foco em profissionalismo, modernidade e conexão entre os membros.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card fade-up" id="project-2">
+                        <div class="project-image-wrapper">
+                            <img 
+                                src="assets/mockup-02.webp" 
+                                alt="Mockup do projeto Encanto — identidade visual minimalista" 
+                                class="project-image"
+                                loading="lazy"
+                                width="600"
+                                height="400"
+                            >
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Encanto</h3>
+                            <p class="project-desc">Criação de identidade visual minimalista para uma marca sustentável, com foco em transmitir delicadeza, naturalidade e conexão emocional com o público.</p>
+                            <div class="project-tags">
+                                <span class="tag">Canva</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card fade-up" id="project-3">
+                        <div class="project-image-wrapper">
+                            <img 
+                                src="assets/mockup-03.jpg" 
+                                alt="Mockup do projeto Wellness Tracker — app de monitoramento de hábitos" 
+                                class="project-image"
+                                loading="lazy"
+                                width="600"
+                                height="400"
+                            >
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Flori — Campanha Visual de Produto</h3>
+                            <p class="project-desc">Criação de uma campanha visual para produto perfumado, explorando estética artística e elementos visuais expressivos para gerar conexão emocional com o público.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SOBRE MIM SECTION                           -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="sobre" id="sobre">
+            <div class="section-container">
+                <div class="sobre-grid">
+                    <div class="sobre-text fade-up">
+                        <span class="section-label">Minha Jornada</span>
+                        <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+                        <p class="sobre-paragraph">
+                            Desde cedo, a arte e a lógica caminharam juntas na minha vida. Ao chegar na <strong>EEEP Luíza de Teodoro Vieira</strong> no programa de <strong>Formação de T.I</strong>, descobri o universo do design digital. Aprendi a usar ferramentas criativas, desenvolvi uma paixão profunda por experiência do usuário e hoje busco minha primeira oportunidade profissional para transformar ideias em experiências que conectam.
+                        </p>
+                        <p class="sobre-paragraph">
+                            Acredito que o design não é apenas como algo se parece, mas como ele funciona e como faz o usuário se sentir.
+                        </p>
+
+                        <div class="ferramentas">
+                            <h3 class="ferramentas-title">Ferramentas & Tecnologias</h3>
+                            <div class="ferramentas-chips">
+                                <span class="chip">Canva</span>
+                                <span class="chip">Figma</span>
+                                <span class="chip">CapCut</span>
+                                <span class="chip">UI Design</span>
+                            </div>
+                        </div>
+
+                        <div class="sobre-socials">
+                            <a href="https://github.com/ayssalima" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="https://wa.me/558574008753" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </a>
+                        </div>
+
+                        <a href="curriculo-ayssa.pdf" class="btn btn-secondary" id="btn-cv-about" download>
+                            <span class="material-symbols-outlined btn-icon">download</span>
+                            Baixar Currículo
+                        </a>
+                    </div>
+
+                    <div class="sobre-photo fade-up">
+                        <div class="photo-frame">
+                            <img 
+                                src="assets/ayssa-photo.webp" 
+                                alt="Foto de Ayssa Lima, designer e estudante de TI" 
+                                class="about-photo"
+                                loading="lazy"
+                                width="500"
+                                height="600"
+                            >
+                            <div class="photo-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- CERTIFICADOS SECTION                        -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="certificados" id="certificados">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Formação</span>
+                    <h2 class="section-title">Certificados & <span class="accent">Formação</span></h2>
+                    <p class="section-subtitle">Uma linha do tempo das minhas conquistas acadêmicas e profissionais.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line" id="timeline-line"></div>
+
+                    <!-- Certificate 1 -->
+                    <div class="timeline-item timeline-left fade-up" id="cert-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <span class="material-symbols-outlined">smart_toy</span>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Fev 2026</span>
+                                <h3 class="timeline-title">Aprendendo a Programar com Games & IA</h3>
+                                <p class="timeline-institution">UFC — Universidade Federal do Ceará</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="timeline-item timeline-right fade-up" id="cert-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <span class="material-symbols-outlined">cloud</span>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Mar 2026</span>
+                                <h3 class="timeline-title">HCCDA — Tech Essentials Course</h3>
+                                <p class="timeline-institution">Huawei</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="timeline-item timeline-left fade-up" id="cert-3">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <span class="material-symbols-outlined">school</span>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Conclusão: Dez 2026</span>
+                                <h3 class="timeline-title">Técnico em Informática</h3>
+                                <p class="timeline-institution">EEEP Luíza de Teodoro Vieira</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="timeline-item timeline-right fade-up" id="cert-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <span class="material-symbols-outlined">campaign</span>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date timeline-date--ongoing">Em andamento</span>
+                                <h3 class="timeline-title">Marketing Digital</h3>
+                                <p class="timeline-institution">Escola Nacional de Administração Pública</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="timeline-item timeline-left fade-up" id="cert-5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <span class="material-symbols-outlined">palette</span>
+                            </div>
+                            <div class="timeline-content">
+                                <span class="timeline-date timeline-date--ongoing">Em andamento</span>
+                                <h3 class="timeline-title">Fundamentos do Design Gráfico</h3>
+                                <p class="timeline-institution">Fundação Bradesco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- CTA SECTION                                 -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="cta-section" id="contato">
+            <div class="section-container">
+                <div class="cta-content fade-up">
+                    <h2 class="cta-heading">Vamos criar algo <span class="accent-light">memorável</span> juntos?</h2>
+                    <p class="cta-subtitle">Disponível para estágios, projetos criativos e colaborações. Adoraria ouvir sobre sua próxima ideia.</p>
+                    <div class="cta-actions">
+                        <a href="https://wa.me/558574008753" class="btn btn-primary btn-lg" id="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Entre em Contato
+                        </a>
+                    </div>
+                    <div class="cta-socials">
+                        <a href="https://github.com/ayssalima" class="social-link-light" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" class="social-link-light" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://wa.me/558574008753" class="social-link-light" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-text">Copyright © 2026 by 💙 Ayssa Lima | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
