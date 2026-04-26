@@ -217,7 +217,55 @@
     updateActiveNav();
 
     // ─────────────────────────────────────
-    // 8. RESIZE HANDLER — Close menu on desktop
+    // 8. PHOTO FADE CAROUSEL (Invisible transitions)
+    // ─────────────────────────────────────
+    const photoCarousel = document.getElementById('photo-carousel');
+    if (photoCarousel) {
+        const photos = photoCarousel.querySelectorAll('.carousel-photo');
+        let currentPhoto = 0;
+        const photoInterval = 4500; // 4.5 seconds per photo
+
+        function nextPhoto() {
+            photos[currentPhoto].classList.remove('active');
+            currentPhoto = (currentPhoto + 1) % photos.length;
+            photos[currentPhoto].classList.add('active');
+        }
+
+        setInterval(nextPhoto, photoInterval);
+    }
+
+    // ─────────────────────────────────────
+    // 9. VIDEO MARQUEE — Autoplay on viewport
+    // ─────────────────────────────────────
+    const videoMarquee = document.getElementById('destaque-videos');
+
+    if (videoMarquee) {
+        var allMarqueeVideos = videoMarquee.querySelectorAll('.marquee-video');
+
+        var marqueeObserver = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        // Play all videos
+                        allMarqueeVideos.forEach(function (v) {
+                            v.play().catch(function () {});
+                        });
+                    } else {
+                        // Pause all when out of view
+                        allMarqueeVideos.forEach(function (v) {
+                            v.pause();
+                        });
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        marqueeObserver.observe(videoMarquee);
+    }
+
+    // ─────────────────────────────────────
+    // 10. RESIZE HANDLER — Close menu on desktop
     // ─────────────────────────────────────
     let resizeTimer;
     window.addEventListener('resize', function () {
